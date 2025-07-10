@@ -19,7 +19,7 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About Us</a></li>
-                    <li><a href="#">Our Rooms</a></li>
+                    <li><a href="rooms.php">Our Rooms</a></li>
                     <li><a href="#">Facilities<sup>NEW</sup></a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
