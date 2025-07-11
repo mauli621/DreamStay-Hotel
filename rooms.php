@@ -17,8 +17,10 @@
     <section>
         <img src="./assets/rooms_bg.jpg" alt="Rooms Hero Image" class="img">
         <div class="inner-text">
-            <h1>Our Rooms</h1>
-            <p>Experience comfort and luxury in our beautifully designed rooms.</p>
+            <h1 class="tagline">Rest, Relax, Repeat</h1>
+            <h1 class="tagline">Our Rooms That Redefine Comfort</h1> 
+        <button class="hero-btn"><a href="rooms.php">Book Now</a></button>
+        <button class="hero-btn"><a href="about.php">About us</a></button>
         </div>
     </section>
 

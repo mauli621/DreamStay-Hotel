@@ -4,10 +4,6 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>DreamStay - Your Dream Hotel</title>
-   <style>
-      display: flex;
-      flex-direction: column;
-   </style>
 </head>
 <body>
    <?php
@@ -18,6 +14,9 @@
     ?>
     <?php
     include 'form.php'
+    ?>
+    <?php
+    include 'aboutcard.php'
     ?>
     <?php
     include 'footer.php'

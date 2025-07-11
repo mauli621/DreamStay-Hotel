@@ -13,8 +13,8 @@
         <div class="inner-text">
         <h1 class="tagline">Welcome to DreamStay Hotel</h1>
         <h1 class="tagline">Live The Luxury</h1>
-        <button class="hero-btn">Book Now</button>
-        <button class="hero-btn">About us</button>
+        <button class="hero-btn"><a href="rooms.php">Book Now</a></button>
+        <button class="hero-btn"><a href="about.php">About us</a></button>
         </div>
     </section>
 

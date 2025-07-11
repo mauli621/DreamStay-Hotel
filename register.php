@@ -18,7 +18,7 @@
 
    <div class="main-content">
       <div class="wrapper">
-         <form action="register_info.php" method="post">
+         <form method="post">
             <h2>Registration</h2>
 
             <div class="row">
@@ -55,7 +55,7 @@
             <button type="submit" class="btn">Sign Up</button>
 
             <div class="register-link">
-               <p>Already have an account? <a href="log_in.php"><b>Login</b></a></p>
+               <p>Already have an account? <a href="form.php"><b>Login</b></a></p>
             </div>
          </form>
       </div>
