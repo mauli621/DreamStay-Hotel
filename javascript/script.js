@@ -10,11 +10,4 @@ document.addEventListener("DOMContentLoaded", function () {
   closeBtn.addEventListener("click", function () {
     wrapper.style.display = "none";
   });
-
-  // Optional: Close form if user clicks outside
-  window.addEventListener("click", function (e) {
-    if (e.target === wrapper) {
-      wrapper.style.display = "none";
-    }
-  });
 });

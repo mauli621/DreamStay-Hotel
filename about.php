@@ -17,8 +17,6 @@
    <div class="inner-text">
         <h1 class="tagline">Discover the Soul of DreamStay</h1>
         <h1 class="tagline">Luxury Legacy DreamStay</h1>
-        <button class="hero-btn"><a href="rooms.php">Book Now</a></button>
-        <button class="hero-btn"><a href="about.php">About us</a></button>
    </div>
    <div class="main-history">
       <ul>
