@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Login</title>
-   <link rel="stylesheet" href="./css/form.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Sign Up</title>
+  <link rel="stylesheet" href="./css/form.css" />
 </head>
 <body>
-    <div class="wrapper">
-        <div class="close-btn">&times;</div> 
-        <form method="post">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type="text" name="username" placeholder="Username" required>
-                <i class='bx bx-user'></i>
-            </div>
-            <div class="input-box">
-                <input type="password" name="password" placeholder="Password" required>
-            </div>
-            <div class="remember-forgot">
-                <label><input type="checkbox">Remember Me</label>
-                <a href="#">Forgot Password</a>
-            </div>
-            <button type="submit" class="btn">Login</button>
-            <div class="register-link">
-                <p>Don't have an account? <a href="register.php">Sign Up</a></p>
-            </div>
 
-        </form>
+
+ <div class="auth-popup">
+<div class="popup" id="loginPopup">
+  <div class="close-btn">&times;</div>
+  <form method="post">
+    <h1>Login</h1>
+    <div class="input-box">
+      <input type="text" name="username" placeholder="Username" required />
     </div>
-    <script src="./javascript/script.js"></script>
+    <div class="input-box">
+      <input type="password" name="password" placeholder="Password" required />
+    </div>
+    <div class="remember-forgot">
+      <label><input type="checkbox" />Remember Me</label>
+      <a href="#">Forgot Password?</a>
+    </div>
+    <button type="submit" class="btn">Login</button>
+    <div class="register-link">
+      <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+    </div>
+  </form>
+</div>
+
+<!-- Sign Up Form -->
+<div class="popup" id="signupPopup">
+  <div class="close-btn">&times;</div>
+  <form method="post">
+    <h1>Sign Up</h1>
+    <div class="input-box">
+      <input type="text" name="firstname" placeholder="First Name" required />
+    </div>
+    <div class="input-box">
+      <input type="text" name="lastname" placeholder="Last Name" required />
+    </div>
+    <div class="input-box">
+      <input type="email" name="email" placeholder="Email" required />
+    </div>
+    <div class="input-box">
+      <input type="text" name="mobno" placeholder="Mobile No" required />
+    </div>
+    <div class="input-box">
+      <input type="password" name="password" placeholder="Password" required />
+    </div>
+    <div class="input-box">
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+    </div>
+    <button type="submit" class="btn">Register</button>
+    <div class="register-link">
+      <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+    </div>
+  </form>
+</div>
+</div>
+
+<script src="./javascript/script.js"></script>
 </body>
 </html>
