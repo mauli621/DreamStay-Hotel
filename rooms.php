@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Rooms</title>
+    <title>DreamStay - Rest Relax Repeat</title>
+    <link rel="icon" type="image/gif" href="./assets/logo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/rooms.css">
 </head>
@@ -12,6 +13,7 @@
 <body>
     <?php
     include 'header.php';
+    include 'form.php';
     ?>
 
     <section>
@@ -61,7 +63,7 @@
 
                 <div class="button-wrapper">
                     <button class="details-btn">
-                        <i class="fas fa-calendar-check"></i>Book Now
+                        <i class="fas fa-calendar-check"></i><a href="./room_booking_form.php">Book Now</a>
                     </button>
                 </div>
             </div>
@@ -100,7 +102,7 @@
                 </div>
                 <div class="button-wrapper">
                     <button class="details-btn">
-                        <i class="fas fa-calendar-check"></i>Book Now
+                        <i class="fas fa-calendar-check"></i><a href="./room_booking_form.php">Book Now</a>
                     </button>
                 </div>
             </div>
@@ -138,7 +140,7 @@
 
                 <div class="button-wrapper">
                     <button class="details-btn">
-                        <i class="fas fa-calendar-check"></i>Book Now
+                        <i class="fas fa-calendar-check"></i><a href="./room_booking_form.php">Book Now</a>
                     </button>
                 </div>
             </div>
@@ -176,7 +178,7 @@
 
                 <div class="button-wrapper">
                     <button class="details-btn">
-                        <i class="fas fa-calendar-check"></i>Book Now
+                        <i class="fas fa-calendar-check"></i><a href="./room_booking_form.php">Book Now</a>
                     </button>
                 </div>
             </div>
@@ -213,7 +215,7 @@
 
                 <div class="button-wrapper">
                     <button class="details-btn">
-                        <i class="fas fa-calendar-check"></i>Book Now
+                        <i class="fas fa-calendar-check"></i><a href="./room_booking_form.php">Book Now</a>
                     </button>
                 </div>
             </div>
@@ -250,7 +252,7 @@
 
                 <div class="button-wrapper">
                     <button class="details-btn">
-                        <i class="fas fa-calendar-check"></i>Book Now
+                        <i class="fas fa-calendar-check"></i><a href="./room_booking_form.php">Book Now</a>
                     </button>
                 </div>
             </div>
@@ -288,7 +290,7 @@
 
                 <div class="button-wrapper">
                     <button class="details-btn">
-                        <i class="fas fa-calendar-check"></i>Book Now
+                        <i class="fas fa-calendar-check"></i><a href="./room_booking_form.php">Book Now</a>
                     </button>
                 </div>
             </div>
@@ -326,7 +328,7 @@
 
                 <div class="button-wrapper">
                     <button class="details-btn">
-                        <i class="fas fa-calendar-check"></i>Book Now
+                        <i class="fas fa-calendar-check"></i><a href="./room_booking_form.php">Book Now</a>
                     </button>
                 </div>
             </div>
@@ -364,7 +366,7 @@
 
                 <div class="button-wrapper">
                     <button class="details-btn">
-                        <i class="fas fa-calendar-check"></i>Book Now
+                        <i class="fas fa-calendar-check"></i><a href="./room_booking_form.php">Book Now</a>
                     </button>
                 </div>
             </div>
