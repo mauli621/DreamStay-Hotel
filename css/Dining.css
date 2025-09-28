@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #fefefe;
+  color: #333;
+}
+
+.events {
+  background: #f8f9fc;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.events h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  color: #222;
+  position: relative;
+  display: inline-block;
+}
+
+.events h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, #003580, #0057b7);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Card Layout */
+.event-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Make meeting card horizontal */
+.card1 {
+  display: flex;
+  flex-direction: row; /* side by side layout */
+  align-items: stretch;
+  max-width: 1000px; /* wider card */
+  height: 400px; /* fix height for balance */
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+/* Left side image */
+.card1 img {
+  width: 45%; /* take left side */
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  transition: transform 0.4s ease;
+}
+
+/* Right side content */
+.card1 .content {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card1:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card1:hover img {
+  transform: scale(1.05);
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.content h4 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444;
+  margin: 0.3rem 0;
+}
+
+/* Amenities */
+.amenities {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.amenity {
+  display: flex;
+  align-items: center;
+  background: #f1f5ff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #0077ff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.amenity i {
+  margin-right: 6px;
+  font-size: 1rem;
+}
+
+.amenity:hover {
+  background: linear-gradient(90deg, #003580, #0057b7);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Button */
+.button-wrapper {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.details-btn {
+  background: linear-gradient(90deg, #003580, #0057b7);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 119, 255, 0.3);
+}
+
+.details-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 119, 255, 0.5);
+}
+
+/* Hero Section */
+.hero .hero-image {
+  background-size: cover;
+  width: 1550px;
+  height: 700px;
+}
+
+.hero-content {
+  position: relative;
+  top: -450px;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s ease;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1.5s ease;
+}

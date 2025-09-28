@@ -1,0 +1,99 @@
+.auth-popup .popup {
+  width: 400px;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 1000;
+}
+
+.auth-popup .popup h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.auth-popup .input-box {
+  margin: 15px 0;
+}
+
+.auth-popup .input-box input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #003580;
+  border-radius: 19px;
+  font-size: 16px;
+  outline: none;
+}
+
+.auth-popup .input-box input::placeholder {
+  color: #777;
+}
+
+.auth-popup .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.auth-popup .remember-forgot a {
+  color: #003580;
+  text-decoration: none;
+}
+
+.auth-popup .remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.auth-popup .btn {
+  width: 100%;
+  padding: 12px;
+  background: #003580;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.auth-popup .btn:hover {
+  background: #0057b7;
+}
+
+.auth-popup .register-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-popup .register-link a {
+  color: #003580;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-popup .register-link a:hover {
+  text-decoration: underline;
+}
+
+.auth-popup .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.auth-popup .close-btn:hover {
+  color: red;
+}

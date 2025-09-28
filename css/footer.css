@@ -1,0 +1,111 @@
+footer {
+  background: #fff;
+  color: #000;
+  padding: 50px 20px 20px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+/* Brand Section */
+.footer-brand {
+  flex: 1 1 250px;
+}
+.footer-brand img {
+  height: 90px;
+  width: 250px;
+}
+.footer-brand h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #003580;
+  margin-bottom: 10px;
+}
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Footer Columns */
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 220px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #003580;
+  border-bottom: 2px solid #003580;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-column p,
+.footer-column a {
+  font-size: 14px;
+  color: #000;
+  margin: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer-column ul li a:hover {
+  color: #003580;
+  padding-left: 5px;
+}
+
+/* Icons & Social Links */
+.footer-column i {
+  margin-right: 8px;
+  color: #003580;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.social-icons a {
+  color: #000;
+  font-size: 20px;
+  transition: transform 0.3s, color 0.3s;
+}
+.social-icons a:hover {
+  color: #003580;
+  transform: scale(1.2);
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+  font-size: 14px;
+  color: #000;
+}

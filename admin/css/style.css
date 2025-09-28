@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  overflow-x: hidden;
+}
+.admin-header {
+  background-color: #fff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 220px;
+  right: 0;
+  height: 60px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.recent .new {
+  margin-left: 10px;
+}
+.brand {
+  display: flex;
+}
+.brand img {
+  height: 85px;
+  transition: transform 0.3s ease;
+}
+.brand .name h3 {
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+.brand img:hover {
+  transform: scale(1.05);
+}
+.name h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 0.5rem;
+  margin-top: 1.7rem;
+  animation: fadeDown 0.6s ease forwards;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-right p {
+  font-size: 20px;
+  color: black;
+}
+.logout-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #003580;
+  color: white;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: #007bff;
+  color: #f1f1f1;
+}
+
+.sidebar ul li a.active {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.main-content {
+  margin-left: 220px;
+  padding: 20px;
+  width: calc(100% - 220px);
+}
+
+.cards {
+  margin-top: 7rem;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.card i {
+  font-size: 30px;
+  color: #003580;
+}
+
+.recent table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.recent table thead {
+  background-color: #003580;
+  color: #fff;
+}
+
+.recent table th,
+.recent table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  animation: fadeDown 0.8s ease forwards;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeUp 0.7s ease forwards;
+  opacity: 0;
+}
+
+.card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #003580;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.recent h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #2c3e50;
+  animation: fadeDown 0.6s ease forwards;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.sidebar ul li a.active {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+thead {
+  background-color: #003580;
+  color: #fff;
+}
+
+thead th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+tbody td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background-color: #f0f9ff;
+  transition: background-color 0.2s ease;
+}
+
+.change {
+  margin-left: -270px;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

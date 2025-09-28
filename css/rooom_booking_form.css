@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+} */
+
+/* Heading */
+.heading {
+  text-align: center;
+}
+
+.heading p {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #0057b7;
+  display: inline-block;
+}
+
+/* Form Wrapper */
+.c-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  padding: 17px 12px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin-top: 2rem;
+}
+
+/* Input Fields */
+.input-field {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field input,
+.input-field select,
+textarea {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-field input:focus,
+.input-field select:focus,
+textarea:focus {
+  border-color: #0057b7;
+}
+
+/* Grouped Fields */
+.date,
+.count {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.date .input-field,
+.count .input-field {
+  flex: 1;
+  min-width: 42%;
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Submit Button */
+.primary-btn {
+  background-color: #0057b7;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  left: 40%;
+}
+
+.primary-btn:hover {
+  background-color: #0057b0;
+}
+
+.primary-btn i {
+  margin-right: 6px;
+}
