@@ -22,8 +22,10 @@ if (!isset($_GET['type'])) {
 }
 
 $user_id = $_SESSION['user_id'];
-$type    = isset($_GET['type']) ? $_GET['type'] : 'room'; 
-//$type = $_POST['booking_type'];  // instead of $_GET['type']
+if (!isset($type)) {
+    $type = isset($_GET['type']) ? $_GET['type'] : 'room';
+}
+
 
 if ($type === "event") {
     $booking_id = isset($_GET['event_booking_id']) ? intval($_GET['event_booking_id']) : 0;
@@ -180,19 +182,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['payment_method'])) {
                     <option>SBI</option>
                     <option>HDFC</option>
                     <option>ICICI</option>
+                    <option>BOB</option>
                     <option>Axis Bank</option>
                     <option>PNB</option>
                 </select>
                 <label>Enter Account Number:</label>
-                <input type="text" name="num_id" placeholder="Ex. 86970706969607">
+                <input type="text" name="num_id" placeholder="Ex. 86970706969607" pattern="^\d{12}$"  >
                 <label>Enter IFSC Code:</label>
-                <input type="text" name="ifsc_id" placeholder="Ex. 5gty67fhr78u8hh">
+                <input type="text" name="ifsc_id" placeholder="Ex. SBIN0005900" pattern="^[A-Z]{4}0[A-Z0-9]{6}$">
             </div>
 
             <!-- UPI -->
             <div id="upiDetails" class="hidden">
                 <label>Enter UPI ID:</label>
-                <input type="text" name="upi_id" placeholder="example@upi">
+                <input type="text" name="upi_id" placeholder="example@upi" pattern="^[a-zA-Z0-9.\-_]{2,256}@[a-zA-Z]{2,64}$">
                 <label>Select Your Bank:</label>
                 <select name="bank_nameUPI">
                     <option>SBI</option>
@@ -200,17 +203,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['payment_method'])) {
                     <option>ICICI</option>
                     <option>Axis Bank</option>
                     <option>PNB</option>
+                    <option>BOB</option>
                 </select>
             </div>
 
             <!-- Card -->
             <div id="cardDetails" class="hidden">
                 <label>Card Number:</label>
-                <input type="text" name="card_number" placeholder="XXXX-XXXX-XXXX-XXXX">
+                <input type="text" name="card_number" placeholder="XXXX-XXXX-XXXX-XXXX" pattern="^(\d{4}[- ]?){3}\d{4}$"
+                    maxlength="19">
                 <label>Expiry Date:</label>
                 <input type="month" name="card_expiry">
                 <label>CVV:</label>
-                <input type="password" name="card_cvv" maxlength="3" placeholder="XXX">
+                <input type="password" name="card_cvv"
+       pattern="^\d{3,4}$"
+       maxlength="4"
+       inputmode="numeric"
+       autocomplete="cc-csc"
+       placeholder="CVV"
+       required>
             </div>
 
             <button type="submit" class="btn">Proceed to Pay</button>
@@ -232,6 +243,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['payment_method'])) {
                 document.getElementById("cardDetails").classList.remove("hidden");
             }
         });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const expiryInput = document.querySelector('input[name="card_expiry"]');
+    const today = new Date();
+    
+    // Move to next month
+    let month = today.getMonth() + 2; // +1 for current month, +1 for next month (0-based index)
+    let year = today.getFullYear();
+    
+    if (month > 12) {
+        month = 1;
+        year += 1;
+    }
+
+    const formattedMonth = month < 10 ? '0' + month : month;
+    expiryInput.min = `${year}-${formattedMonth}`;
+});
+
     </script>
 </body>
 

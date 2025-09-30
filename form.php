@@ -61,7 +61,7 @@ if ($conn->connect_error) {
           <input type="text" name="mobno" placeholder="Mobile No" pattern="[0-9]{10}" required />
         </div>
         <div class="input-box">
-          <input type="password" name="password" placeholder="Password" required />
+          <input type="password" name="password" pattern="^.{6,}$" placeholder="Password" required />
         </div>
         <div class="input-box">
           <input type="password" name="confirm_password" placeholder="Confirm Password" required />

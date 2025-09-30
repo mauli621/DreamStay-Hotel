@@ -136,7 +136,7 @@ $rooms = $conn->query("SELECT * FROM rooms");
                     </div>
                 </div>
                 <div class="input-field">
-                    <input type="text" name="contact_no" placeholder="Contact No." required>
+                    <input type="text" name="contact_no" placeholder="Contact No." pattern="[0-9]{10}" required>
                 </div>
 
                 <textarea placeholder="Do you have additional comments" rows="4" name="comments" required></textarea>
